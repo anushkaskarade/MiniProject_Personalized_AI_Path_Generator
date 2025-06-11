@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personalised Learning Path Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('new.WEBP') no-repeat center center fixed;
+      background-size: cover;
+      color: rgb(19, 163, 163);
+      min-height: 100vh;
+    }
+
+    .header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 70px; /* Increased font size */
+    font-weight: 900;
+    background: linear-gradient(to right, #8fa9ad, #00ddff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    white-space: nowrap; /* Prevent line break */
+    text-align: center;
+}
+
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+    }
+
+    .overlay {
+      background: rgba(239, 241, 243, 0.6);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(110, 99, 99, 0.4);
+      max-width: 90%;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 10px 0 20px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 28px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background: linear-gradient(to right, #0083b0, #00b4db);
+      color: white;
+      transition: transform 0.3s ease, background 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #43e97b, #38f9d7);
+    }
+
+    
+    .result-line {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .result {
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .header { font-size: 18px; }
+      h1 { font-size: 32px; }
+      h2, h3 { font-size: 20px; }
+      .btn { width: 80%; font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Personalised Learning Path Generator</div>
+  <div class="main">
+    <div class="overlay">
+      <h2> Welcome to the Aptitude Test Portal </h2>
+      <h3>Select a Test to Begin</h3>
+      <button class="btn" onclick="openTest('C')">C Test</button>
+      <button class="btn" onclick="openTest('C++')">C++ Test</button>
+      <button class="btn" onclick="openTest('Python')">Python Test</button>
+      <button class="btn" onclick="openTest('Java')">Java Test</button>
+
+      <!-- Centered Result button styled like the test buttons -->
+      <div class="result-line">
+        <a href="Display.html" class="btn result">Result</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const testLinks = {
+      "C": "https://docs.google.com/forms/d/e/1FAIpQLSf1-44wkhbXaOpeUNup_7ZcelHgJvrB8cjdAnjY9yGDjCYSfw/viewform",
+      "C++": "https://forms.gle/xyTQZq1n4UXejeYT8",
+      "Python": "https://forms.gle/LQsBLWHBucqj32at6",
+      "Java": "https://forms.gle/sHQNCQqoAmpx1PZq9"
+    };
+
+    function openTest(lang) {
+      window.open(testLinks[lang], '_blank');
+    }
+  </script>
+</body>
+</html>
+
