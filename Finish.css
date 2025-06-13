@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('Finish.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+  }
+  
+  .completion-container {
+  width: 40%; /* Increased width */
+  height: 550px;
+  background-color: rgba(255, 255, 255, 0.85); /* Light background for contrast */
+  color: #000; /* Black or dark text for readability */
+  font-size: 1.1rem;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  margin-top: 15px;
+  }
+  
+  h1 {
+    color: #2e7d32;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .subtext {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    font-size: 26px;
+    color: #1565c0;
+  }
+  
+  .project-section {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .language-block h3 {
+    color: #37474f;
+    margin-bottom: 8px;
+  }
+  
+  .language-block ul {
+    padding-left: 20px;
+  }
+  
+  .language-block li {
+    margin-bottom: 6px;
+    color: #444;
+  }
+  
+  button {
+    margin-top: 30px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #125ea3;
+  }
+  
